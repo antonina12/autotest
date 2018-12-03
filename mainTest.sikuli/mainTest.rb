@@ -38,10 +38,11 @@ end
 
 #Running testcases
 def runTests test_suite
+  results_count = [0,0]
   
-  results_count = [0,0] 
   test_suite.each do |test_case|
-      Debug.user test_case + " started"
+    func_save
+    Debug.user test_case + " started"
     if (send test_case[0..test_case.size - 8]) == 0
       results_count[0] += 1
 	    Debug.user test_case + " passed"
@@ -64,12 +65,15 @@ end
 testcases_folder = "testcases"
 tests = getFolders testcases_folder
 #import common functions
+require_relative "functions/func_save.sikuli/func_save.rb"
 require_relative "functions/func_close.sikuli/func_close.rb"
 require_relative "functions/func_delete.sikuli/func_delete.rb"
 require_relative "functions/func_new.sikuli/func_new.rb"
 ImagePath.add "functions/func_new.sikuli"
+ImagePath.add "functions/func_save.sikuli"
 ImagePath.add "functions/func_close.sikuli"
 ImagePath.add "functions/func_delete.sikuli"
+
 importTests tests
 runTests tests
 
