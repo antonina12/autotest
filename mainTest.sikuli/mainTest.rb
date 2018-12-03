@@ -16,7 +16,7 @@ end
 
 #Importing testcases
 def importTest test_folder
-  tests_path = "/Users/qalivestream/Desktop/sikulix/autotests/testcases/"
+  tests_path = "/Users/qalivestream/Desktop/sikulix/autotest/testcases/"
   
   testcase = "/" + test_folder[0..test_folder.size - 8] + ".rb"
   begin
