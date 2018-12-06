@@ -1,52 +1,45 @@
-def gfx_designer_layer_selection_drop_down_list
+def gfx_switch_a_view_mode_of_gfx_layers_list
 begin
     func_new
     click Pattern "1542717200811.png"
-    sleep 3
+    sleep 2
 
     click Pattern "1542717264929.png"
     click Pattern "1542717277573.png"
     click Pattern("1542717299478.png").similar(0.74).targetOffset(-6,16)
-    wheel Button.WHEEL_UP, 60
+    wheel Button.WHEEL_UP, 66
     click Pattern "1542717200811.png"
-    sleep 3
-begin 
-    wait Pattern("1542896392870.png").similar(0.87)
-
-rescue 
-    click Pattern "1542717264929.png"
-    click Pattern "1542717277573.png"
-    click Pattern("1542717299478.png").similar(0.74).targetOffset(-6,16)
-    wheel Button.WHEEL_DOWN, 70
-    return 1
-end
-   click Pattern("1542896392870.png").targetOffset(95,-43)
-    wait Pattern("1542896654496.png").similar(0.86)
-    click "1542896667254.png"
-    click    "1542896713504.png"
-    wait "1542896735926.png"
-    click "1542896746546.png"
-    
-    click "1542896771838.png"
+    sleep 2
 begin
-    wait "1542896846944.png"
-    func_close
-    click Pattern "1542717264929.png"
-    click Pattern "1542717277573.png"
-    click Pattern("1542717299478.png").similar(0.74).targetOffset(-6,16)
-    wheel Button.WHEEL_DOWN, 70
-    return 0
-rescue 
-    click Pattern "1542717264929.png"
-    click Pattern "1542717277573.png"
-    click Pattern("1542717299478.png").similar(0.74).targetOffset(-6,16)
-    wheel Button.WHEEL_DOWN, 70
-    return 1
-end
+    wait Pattern("1542735017837.png").exact()
+    click Pattern("1542735017837.png").targetOffset(117,121)
+    wait Pattern("1542735188544.png").similar(0.98)
+   click Pattern("1542735188544.png").targetOffset(82,119)
+   wait Pattern("1542735017837.png").similar(0.98)
 rescue
-    func_new
+
+    click Pattern "1542717264929.png"
+    click Pattern "1542717277573.png"
     click Pattern("1542717299478.png").similar(0.74).targetOffset(-6,16)
     wheel Button.WHEEL_DOWN, 70
+
+    return 1
+end
+    click Pattern "1542717264929.png"
+    click Pattern "1542717277573.png"
+    click Pattern("1542717299478.png").similar(0.74).targetOffset(-6,16)
+    wheel Button.WHEEL_DOWN, 70
+
+    return 0
+rescue
+begin
+    click Pattern "1542717264929.png"
+    click Pattern "1542717277573.png"
+    click Pattern("1542717299478.png").similar(0.74).targetOffset(-6,16)
+    wheel Button.WHEEL_DOWN, 70
+rescue 
+    return 1
+end
     return 1
 end
 end
