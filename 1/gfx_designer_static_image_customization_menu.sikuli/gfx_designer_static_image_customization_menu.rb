@@ -13,7 +13,7 @@ begin
     wait"1543419895902.png"
     click Pattern("1543419895902.png").targetOffset(-25,112)
 
-    click Pattern("1544088843176.png").targetOffset(-3,-9)
+    click Pattern("1542297896409.png").similar(0.95).targetOffset(-21,-1)
     click Pattern("1542297925446.png").similar(0.83).targetOffset(-80,0)
 rescue
     click Pattern "1543420037342.png"

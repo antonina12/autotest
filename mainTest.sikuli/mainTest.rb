@@ -41,7 +41,7 @@ def runTests test_suite
   results_count = [0,0]
   
   test_suite.each do |test_case|
-    func_save
+    #func_save
     Debug.user test_case + " started"
     if (send test_case[0..test_case.size - 8]) == 0
       results_count[0] += 1

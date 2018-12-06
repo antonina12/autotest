@@ -1,0 +1,13 @@
+[user (12/6/18, 12:01:27 PM)] gfx_check_the_categories_selector.sikuli imported
+[user (12/6/18, 12:01:27 PM)] gfx_auto_push_pull_option.sikuli imported
+[user (12/6/18, 12:01:27 PM)] gfx_designer_static_image_customization_menu.sikuli imported
+[user (12/6/18, 12:01:27 PM)] gfx_check_the_categories_selector.sikuli started
+[user (12/6/18, 12:02:00 PM)] gfx_check_the_categories_selector.sikuli passed
+[user (12/6/18, 12:02:00 PM)] gfx_auto_push_pull_option.sikuli started
+[user (12/6/18, 12:02:56 PM)] gfx_auto_push_pull_option.sikuli passed
+[user (12/6/18, 12:02:56 PM)] gfx_designer_static_image_customization_menu.sikuli started
+[user (12/6/18, 12:04:18 PM)] gfx_designer_static_image_customization_menu.sikuli passed
+[user (12/6/18, 12:04:18 PM)] Passed: 3
+[user (12/6/18, 12:04:18 PM)] Failed: 0
+[user (12/6/18, 12:04:18 PM)] Failed testcases:
+[user (12/6/18, 12:04:18 PM)] [3, 0]
